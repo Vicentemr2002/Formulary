@@ -7,45 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIPROYECTO</title>
     <link rel="stylesheet" href="../../assets/css/estilos.css" />
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="../../assetss/js/validaciones.js" ></script>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>    
+    <script src="../../assets/js/validaciones.js" ></script>
 
 
 </head>
 
 <body>
+    <form id="fomulario_container" method="post">
     <div class="alta_Categoria">
         <h1>Gamming Eletronic</h1>
         <br>
         <div class="image">
-            <img src="../../asssets/img/image .jpg">
+            <img src="../../assets/img/image .jpg">
         </div>
 
         <br>
             <div class="input">
                 <label for="id">Producto</label>
                 <br>
-                <input id="id" type="text">
+                <input id="id" type="text" placeholder="Producto">
                 <br>
                 <label for="nombre">Nombre</label>
                 <br>
-                <input type="text" id="nombre" name="name">
+                <input type="text" id="nombre" name="name" placeholder="Escribe el Nombre">
                 <br>
                 <label for="img">Imagen</label>
                 <br>
-                <input type="image" id="img" src="../../asssets/img/Teclado.jpg" style="height: 150px;">
+                <input type="file" id="img" name="img" accept="image/png, image/jpeg">
                 <br>
                 <label for="descripcion">Descripcion</label>
                 <br>
-                <input type="text" id="descripcion">
+                <input type="" id="descripcion" placeholder="Escribe una Descripcion">
                 <br>
                 <label for="precio">Precio</label>
                 <br>
-                <input type="number" id="precio">
+                <input type="number" id="precio" placeholder="precio">
                 <br>
                 <label for="Id">Categoria</label>
                 <br>
-                <input type="text" id="Id" name="name">       
+                <input type="text" id="Id" name="name" placeholder="La Categoria">       
             </div>
             <br>
             <div class="button_container">
@@ -55,6 +56,7 @@
             <br>
         <b>Jose Vitriago</b>
     </div>
+</form>
 </body>
 
 </html>
